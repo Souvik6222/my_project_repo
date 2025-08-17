@@ -1,1 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-left">
+            <button class="menu-btn" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo floating-animation">
+                <i class="fab fa-youtube"></i>
+                <span>YouTube</span>
+            </div>
+        </div>
+        
+        <div class="header-center">
+            <div class="search-container">
+                <input type="text" placeholder="Search" class="search-input" id="search-input">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="voice-btn">
+                    <i class="fas fa-microphone"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="header-right">
+            <button class="header-btn">
+                <i class="fas fa-video"></i>
+            </button>
+            <button class="header-btn">
+                <i class="fas fa-bell"></i>
+            </button>
+                         <button class="header-btn profile-btn">
+                 <img src="https://via.placeholder.com/32x32/065fd4/FFFFFF?text=J" alt="Profile" class="profile-img">
+             </button>
+        </div>
+    </header>
 
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-section">
+                <div class="sidebar-item active">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </div>
+                <div class="sidebar-item">
+                    <i class="fas fa-compass"></i>
+                    <span>Explore</span>
+                </div>
+                <div class="sidebar-item">
+                    <i class="fas fa-play-circle"></i>
+                    <span>Shorts</span>
+                </div>
+                <div class="sidebar-item">
+                    <i class="fas fa-subscription"></i>
+                    <span>Subscriptions</span>
+                </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <div class="sidebar-item">
+                    <i class="fas fa-folder"></i>
+                    <span>Library</span>
+                </div>
+                <div class="sidebar-item">
+                    <i class="fas fa-history"></i>
+                    <span>History</span>
+                </div>
+                <div class="sidebar-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Watch later</span>
+                </div>
+                <div class="sidebar-item">
+                    <i class="fas fa-thumbs-up"></i>
+                    <span>Liked videos</span>
+                </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Subscriptions</h3>
+                                 <div class="sidebar-item">
+                     <img src="https://via.placeholder.com/24x24/ff0000/FFFFFF?text=C" alt="Channel" class="channel-avatar">
+                     <span>Cameron Channel</span>
+                 </div>
+                 <div class="sidebar-item">
+                     <img src="https://via.placeholder.com/24x24/065fd4/FFFFFF?text=G" alt="Channel" class="channel-avatar">
+                     <span>Gerard Tech</span>
+                 </div>
+                 <div class="sidebar-item">
+                     <img src="https://via.placeholder.com/24x24/00c853/FFFFFF?text=S" alt="Channel" class="channel-avatar">
+                     <span>Simon Gaming</span>
+                 </div>
+                 <div class="sidebar-item">
+                     <img src="https://via.placeholder.com/24x24/ff6b35/FFFFFF?text=M" alt="Channel" class="channel-avatar">
+                     <span>Megan Cooking</span>
+                 </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Video Player Section -->
+            <div class="video-section">
+                <div class="video-player hover-lift">
+                    <video controls preload="metadata" poster="https://via.placeholder.com/1280x720/000000/FFFFFF?text=YouTube+Clone+Video">
+                        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-overlay">
+                        <div class="play-button pulse-animation">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-info glass-effect">
+                    <h1 class="video-title">Building a Complete YouTube Clone with HTML, CSS & JavaScript</h1>
+                    
+                    <div class="video-stats">
+                        <div class="stats-left">
+                            <span class="views">1.2M views</span>
+                            <span class="date">• 2 days ago</span>
+                        </div>
+                        
+                        <div class="stats-right">
+                            <button class="action-btn like-btn">
+                                <i class="fas fa-thumbs-up"></i>
+                                <span>125K</span>
+                            </button>
+                            <button class="action-btn dislike-btn">
+                                <i class="fas fa-thumbs-down"></i>
+                                <span>Dislike</span>
+                            </button>
+                            <button class="action-btn share-btn">
+                                <i class="fas fa-share"></i>
+                                <span>Share</span>
+                            </button>
+                            <button class="action-btn download-btn">
+                                <i class="fas fa-download"></i>
+                                <span>Download</span>
+                            </button>
+                            <button class="action-btn save-btn">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="channel-section glass-effect">
+                    <div class="channel-info">
+                        <div class="channel-details">
+                            <img src="https://via.placeholder.com/48x48/ff0000/FFFFFF?text=W" alt="Channel" class="channel-avatar-large">
+                            <div class="channel-text">
+                                <h3>Web Dev Master</h3>
+                                <p>2.5M subscribers</p>
+                            </div>
+                        </div>
+                        <button class="subscribe-btn" id="subscribe-btn">
+                            <i class="fas fa-bell"></i>
+                            Subscribe
+                        </button>
+                    </div>
+                    
+                    <div class="video-description">
+                        <p>Learn how to build a complete YouTube clone from scratch using HTML, CSS, and JavaScript. This tutorial covers everything from the basic layout to advanced features like comments, likes, and video recommendations.</p>
+                        <button class="show-more-btn">Show more</button>
+                    </div>
+                </div>
+
+                <div class="comments-section glass-effect">
+                    <div class="comments-header">
+                        <h3>Comments</h3>
+                        <span class="comment-count">1.2K</span>
+                    </div>
+                    
+                    <div class="comment-input-container">
+                                                 <img src="https://via.placeholder.com/40x40/065fd4/FFFFFF?text=U" alt="Profile" class="user-avatar">
+                        <div class="comment-input-wrapper">
+                            <input type="text" placeholder="Add a comment..." class="comment-input" id="comment-input">
+                            <div class="comment-actions">
+                                <button class="cancel-btn">Cancel</button>
+                                <button class="comment-btn" disabled>Comment</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comments-list">
+                        <div class="comment">
+                            <img src="https://via.placeholder.com/40x40/00c853/FFFFFF?text=S" alt="User" class="user-avatar">
+                            <div class="comment-content">
+                                <div class="comment-header">
+                                    <h4>Simon Smith</h4>
+                                    <span class="comment-time">2 hours ago</span>
+                                </div>
+                                <p>Great tutorial! Really helped me understand the structure. Can't wait to build my own version.</p>
+                                <div class="comment-actions">
+                                    <button class="comment-like">
+                                        <i class="fas fa-thumbs-up"></i>
+                                        <span>15</span>
+                                    </button>
+                                    <button class="comment-reply">Reply</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="comment">
+                            <img src="https://via.placeholder.com/40x40/ff6b35/FFFFFF?text=M" alt="User" class="user-avatar">
+                            <div class="comment-content">
+                                <div class="comment-header">
+                                    <h4>Megan Johnson</h4>
+                                    <span class="comment-time">5 hours ago</span>
+                                </div>
+                                <p>This is exactly what I was looking for. The code is so clean and well-organized. Thanks for sharing!</p>
+                                <div class="comment-actions">
+                                    <button class="comment-like">
+                                        <i class="fas fa-thumbs-up"></i>
+                                        <span>8</span>
+                                    </button>
+                                    <button class="comment-reply">Reply</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recommended Videos -->
+            <div class="recommended-section">
+                <h3>Recommended</h3>
+                
+                <div class="video-grid">
+                    <div class="video-card card-hover" data-title="JavaScript Tutorial for Beginners" data-channel="Code Master">
+                        <div class="thumbnail-container">
+                            <img src="https://via.placeholder.com/168x94/ff0000/FFFFFF?text=JS" alt="Thumbnail" class="thumbnail">
+                            <span class="duration">10:25</span>
+                            <button class="playlist-btn">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="video-info-card">
+                            <div class="channel-avatar-small">
+                                <img src="/cameron.png" alt="Channel">
+                            </div>
+                            <div class="video-details">
+                                <h4>JavaScript Tutorial for Beginners</h4>
+                                <p class="channel-name">Code Master</p>
+                                <p class="video-stats">500K views • 1 week ago</p>
+                            </div>
+                            <button class="more-btn">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="video-card card-hover" data-title="CSS Grid Layout Complete Guide" data-channel="CSS Pro">
+                        <div class="thumbnail-container">
+                            <img src="https://via.placeholder.com/168x94/065fd4/FFFFFF?text=CSS" alt="Thumbnail" class="thumbnail">
+                            <span class="duration">15:42</span>
+                        </div>
+                        <div class="video-info-card">
+                            <div class="channel-avatar-small">
+                                <img src="https://via.placeholder.com/36x36/065fd4/FFFFFF?text=G" alt="Channel">
+                            </div>
+                            <div class="video-details">
+                                <h4>CSS Grid Layout Complete Guide</h4>
+                                <p class="channel-name">CSS Pro</p>
+                                <p class="video-stats">800K views • 3 days ago</p>
+                            </div>
+                            <button class="more-btn">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="video-card card-hover" data-title="React Hooks Explained" data-channel="React Guru">
+                        <div class="thumbnail-container">
+                            <img src="https://via.placeholder.com/168x94/00c853/FFFFFF?text=RE" alt="Thumbnail" class="thumbnail">
+                            <span class="duration">8:15</span>
+                        </div>
+                        <div class="video-info-card">
+                            <div class="channel-avatar-small">
+                                <img src="https://via.placeholder.com/36x36/00c853/FFFFFF?text=S" alt="Channel">
+                            </div>
+                            <div class="video-details">
+                                <h4>React Hooks Explained</h4>
+                                <p class="channel-name">React Guru</p>
+                                <p class="video-stats">300K views • 5 days ago</p>
+                            </div>
+                            <button class="more-btn">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="video-card card-hover" data-title="Node.js Backend Development" data-channel="Backend Boss">
+                        <div class="thumbnail-container">
+                            <img src="https://via.placeholder.com/168x94/ff6b35/FFFFFF?text=ND" alt="Thumbnail" class="thumbnail">
+                            <span class="duration">12:30</span>
+                        </div>
+                        <div class="video-info-card">
+                            <div class="channel-avatar-small">
+                                <img src="https://via.placeholder.com/36x36/ff6b35/FFFFFF?text=M" alt="Channel">
+                            </div>
+                            <div class="video-details">
+                                <h4>Node.js Backend Development</h4>
+                                <p class="channel-name">Backend Boss</p>
+                                <p class="video-stats">1.2M views • 1 day ago</p>
+                            </div>
+                            <button class="more-btn">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="video-card card-hover" data-title="Python Data Science Projects" data-channel="Data Scientist">
+                        <div class="thumbnail-container">
+                            <img src="https://via.placeholder.com/168x94/ff9800/FFFFFF?text=PY" alt="Thumbnail" class="thumbnail">
+                            <span class="duration">20:15</span>
+                        </div>
+                        <div class="video-info-card">
+                            <div class="channel-avatar-small">
+                                <img src="https://via.placeholder.com/36x36/ff0000/FFFFFF?text=C" alt="Channel">
+                            </div>
+                            <div class="video-details">
+                                <h4>Python Data Science Projects</h4>
+                                <p class="channel-name">Data Scientist</p>
+                                <p class="video-stats">600K views • 4 days ago</p>
+                            </div>
+                            <button class="more-btn">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="video-card card-hover" data-title="Machine Learning Basics" data-channel="AI Expert">
+                        <div class="thumbnail-container">
+                            <img src="https://via.placeholder.com/168x94/9c27b0/FFFFFF?text=ML" alt="Thumbnail" class="thumbnail">
+                            <span class="duration">18:45</span>
+                        </div>
+                        <div class="video-info-card">
+                            <div class="channel-avatar-small">
+                                <img src="https://via.placeholder.com/36x36/065fd4/FFFFFF?text=G" alt="Channel">
+                            </div>
+                            <div class="video-details">
+                                <h4>Machine Learning Basics</h4>
+                                <p class="channel-name">AI Expert</p>
+                                <p class="video-stats">900K views • 2 days ago</p>
+                            </div>
+                            <button class="more-btn">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="video-card card-hover" data-title="Git and GitHub Tutorial" data-channel="Version Control Pro">
+                        <div class="thumbnail-container">
+                            <img src="https://via.placeholder.com/168x94/607d8b/FFFFFF?text=GIT" alt="Thumbnail" class="thumbnail">
+                            <span class="duration">25:10</span>
+                        </div>
+                        <div class="video-info-card">
+                            <div class="channel-avatar-small">
+                                <img src="https://via.placeholder.com/36x36/00c853/FFFFFF?text=S" alt="Channel">
+                            </div>
+                            <div class="video-details">
+                                <h4>Git and GitHub Tutorial</h4>
+                                <p class="channel-name">Version Control Pro</p>
+                                <p class="video-stats">1.5M views • 6 days ago</p>
+                            </div>
+                            <button class="more-btn">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="video-card card-hover" data-title="Web Development Full Course" data-channel="Web Dev Pro">
+                        <div class="thumbnail-container">
+                            <img src="https://via.placeholder.com/168x94/4caf50/FFFFFF?text=WEB" alt="Thumbnail" class="thumbnail">
+                            <span class="duration">14:20</span>
+                        </div>
+                        <div class="video-info-card">
+                            <div class="channel-avatar-small">
+                                <img src="https://via.placeholder.com/36x36/ff6b35/FFFFFF?text=M" alt="Channel">
+                            </div>
+                            <div class="video-details">
+                                <h4>Web Development Full Course</h4>
+                                <p class="channel-name">Web Dev Pro</p>
+                                <p class="video-stats">400K views • 1 week ago</p>
+                            </div>
+                            <button class="more-btn">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
